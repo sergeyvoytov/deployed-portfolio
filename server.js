@@ -19,7 +19,7 @@ app.get('/gingerkisses', function(request, response){
     from: 'ginger'
   });
 });
-
-app.listen(3000, function() {
+const PORT =process.env.PORT || 3000;
+app.listen(PORT, function() {
   console.log('great job nicholas, you started a server on port 3000');
 });
